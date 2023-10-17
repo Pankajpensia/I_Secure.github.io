@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:" />
+
+  <link rel="icon" href="images/favicon.png" />
+
+  <title>Secure Folder</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/framework7.bundle.min.css" />
+
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="app">
+    <div class="view view-main view-init" data-url="/">
+      <div class="page page-home page-with-subnavbar">
+        <div class="toolbar tabbar tabbar-labels toolbar-bottom">
+          <div class="toolbar-inner">
+            <a href="#tab-1" class="tab-link tab-link-active">
+              <i class="fa fa-home"></i>
+              <p>Home</p>
+            </a>
+
+            <a href="#tab-2" class="tab-link">
+              <i class="fa-solid fa-folder"></i>
+
+              <p>Document</p>
+            </a>
+
+            <a href="#tab-4" class="tab-link">
+              <i class="fa-solid fa-user"></i>
+
+              <p>Profile</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- tabs -->
+
+        <div class="tabs-animated-wrap">
+          <div class="tabs">
+            <!-- tabs 1 -->
+
+            <div id="tab-1" class="tab page-content tab-active">
+              <!-- home -->
+
+              <div class="container">
+                <div class="separator"></div>
+
+                <!-- title home -->
+
+                <div class="title-home">
+                  <div class="content">
+                    <span>Welcome to </span>
+
+                    <h1>Secure Folder</h1>
+
+                    <p>Your Own Locket</p>
+                  </div>
+                </div>
+
+                <!-- end title home -->
+
+                <div class="separator"></div>
+
+                <!-- features -->
+
+                <div class="features-home">
+                  <h3>Add Document</h3>
+
+                  <div class="page-content">
+                    <!-- contact us -->
+
+                    <form action="#">
+                      <input type="text" placeholder="Document Title" id="Title" class="" />
+
+                      <textarea name="#" cols="30" id="Info" rows="10">Document Information</textarea>
+
+                      <button class="buttons" id="submit">Add Now</button>
+                    </form>
+
+                    <!-- end contact us -->
+                  </div>
+                </div>
+
+                <!-- end follow us -->
+
+                <!-- end features -->
+
+                <div class="separator-big"></div>
+              </div>
+
+              <!-- end home -->
+            </div>
+
+            <!-- end tabs 1 -->
+
+            <!-- tabs 2 -->
+
+            <div id="tab-2" class="tab page-content">
+              <!-- elements -->
+
+              <div class="page page-current">
+                <!-- navbar -->
+
+                <div class="navbar">
+                  <div class="navbar-inner sliding navbar-pages">
+                    <a href="#" class="link back"> </a>
+
+                    <h4>Documents</h4>
+
+                    <div class="item-right"></div>
+                  </div>
+                </div>
+
+                <!-- end navbar -->
+
+                <div class="page-content">
+                  <!-- accordion -->
+
+                  <div class="segments-page">
+                    <div class="container">
+
+
+                      <div class="accordion accordion-icon content-entry">
+                        <div class="list accordion-list">
+                          <ul id="DocContainer">
+                          </ul>
+                          <div class="separator-big"></div>
+                        </div>
+                      </div>
+
+                      <!-- end accordion icon -->
+                    </div>
+                  </div>
+
+                  <!-- end accordion -->
+                </div>
+              </div>
+
+              <!-- end elements -->
+
+              <div class="separator-big"></div>
+            </div>
+
+            <!-- tabs 4 -->
+
+            <div id="tab-4" class="tab page-content">
+              <!-- apps -->
+
+              <div class="page page-current">
+                <!-- navbar -->
+
+                <div class="navbar">
+                  <div class="navbar-inner sliding navbar-pages">
+                    <a href="index.html" class="link back"> <button class="buttons" id="LogOutBtn">LogOut</button> </a>
+
+                    <h4>Profile</h4>
+
+                    <div class="item-right">
+
+
+                    </div>
+                  </div>
+                </div>
+                <script>
+
+                  let LogOutBtn = document.getElementById('LogOutBtn');
+                  LogOutBtn.click = function () {
+                    window.open("index.html")
+                  }
+
+                </script>
+
+                <!-- end navbar -->
+
+                <div class="page-content">
+                  <!-- profile -->
+
+                  <div class="segments-page">
+                    <div class="container">
+                      <div class="profile">
+                        <div class="content-box">
+                          <div class="profile-user">
+                            <div class="content-image">
+                              <img src="person.png" style="width:200px; height:200px;" alt="Profile Picture"
+                                id="profile" />
+
+                              <div class="icon-edit">
+                                <a href="/profile-edit/"> </a>
+                              </div>
+                            </div>
+
+                            <div class="profile-name">
+                              <h4 id="FullName">Username</h4>
+
+                              <span id="MobileNumber">1234567890</span>
+                            </div>
+                          </div>
+
+                          <div class="separator"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- end profile -->
+
+                  <div class="separator"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- end apps -->
+
+            <div class="separator-big"></div>
+          </div>
+
+          <!-- end tabs 4 -->
+        </div>
+      </div>
+
+      <!-- end tabs -->
+    </div>
+  </div>
+
+  <!-- script -->
+
+  <script src="js/framework7.bundle.min.js"></script>
+
+  <script src="js/routes.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/app.js"></script>
+
+  <!-- <script type="module" src="js/setData.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+  <script type="module" src="js/getData.js"></script>
+  <script>
+    let MobileNumber = document.getElementById("MobileNumber")
+    let FullName = document.getElementById("FullName");
+    let profile = document.getElementById("profile")
+    let FirstName = localStorage.getItem("FirstName")
+    let LastName = localStorage.getItem("LastName")
+
+    let Name = FirstName + ' ' + LastName;
+
+    FullName.innerHTML = Name;
+    MobileNumber.innerHTML = localStorage.getItem("Mobile")
+    profile.src = localStorage.getItem("ImageURL")
+
+
+  </script>
+</body>
+
+</html>

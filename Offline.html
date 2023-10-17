@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap:" />
+
+  <link rel="icon" href="images/favicon.png" />
+
+  <title>Secure Folder</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/framework7.bundle.min.css" />
+
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="app">
+
+
+    <!-- elements -->
+
+    <div class="page page-current">
+      <!-- navbar -->
+
+      <!-- end navbar -->
+
+      <div class="page-content">
+        <!-- accordion -->
+        <p style="color:red; margin-left:5px; margin-right: 5px;">You are Offline Now so You Cannot Edit Delete And Add
+          Any Document</p>
+        <div class="container">
+          <div class="follow-us">
+            <h3>Total Documents :</h3>
+
+            <ul>
+              <li>
+                <a href="">
+                  <h1 id="DocumentCount">10</h1>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="separator-big"></div>
+
+          <div class="accordion accordion-icon content-entry">
+            <div class="list accordion-list">
+              <ul id="DocContainer">
+              </ul>
+            </div>
+          </div>
+
+          <!-- end accordion icon -->
+        </div>
+      </div>
+
+      <!-- end accordion -->
+    </div>
+  </div>
+
+  <!-- end elements -->
+
+  <div class="separator-big"></div>
+  </div>
+  </div>
+  <script src="/js/Offline.js"></script>
+  <script src="/js/framework7.bundle.min.js"></script>
+</body>
+
+</html>
